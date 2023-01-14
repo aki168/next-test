@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 const Chat = ({ username, userLocation }) => {
   const router = useRouter();
   const pusher = new Pusher(process.env.NEXT_PUBLIC_KEY, {
-    cluster: "eu",
+    cluster: "ap3",
     // use jwts in prod
     authEndpoint: `api/pusher/auth`,
     auth: { params: {username, userLocation}}
@@ -49,6 +49,7 @@ const Chat = ({ username, userLocation }) => {
 
     // updates chats
     channel.bind("chat-update", function (data) {
+      console.log('updates chats',data)
       const {username, message} = data
       setChats((prevState) => [
         ...prevState,

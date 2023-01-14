@@ -28,6 +28,7 @@ function MyApp({ Component, pageProps }) {
   };
 
   const trackPosition = async (position) => {
+    console.log(position)
     const { latitude, longitude } = position.coords;
 
     try {

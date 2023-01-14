@@ -12,12 +12,13 @@
     "autoprefixer": "^10.0.4",
     "axios": "^0.21.1",
     "cors": "^2.8.5",
-    "next": "latest",
+    "eslint-config-next": "^13.1.2",
+    "next": "^10.0.8",
     "postcss": "^8.1.10",
     "pusher": "^5.0.0",
     "pusher-js": "^7.0.3",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "tailwindcss": "^2.0.2"
   }
 }
